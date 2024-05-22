@@ -2,6 +2,11 @@ import './App.css'
 import userData from './userData.json'
 import Profile from './components/Profile/Profile'
 
+import FriendList from './components/FriendList/FriendList'
+import friends from './friends.json'
+
+
+
 function App() {
 
   return (
@@ -12,7 +17,8 @@ function App() {
         location={userData.location}
         avatar={userData.avatar}
         stats={userData.stats}
-  />
+      />
+       <FriendList friends={friends} />
     </>
   )
 }
